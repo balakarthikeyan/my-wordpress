@@ -1,2 +1,93 @@
-/db_data/
-/wp_data/
+#---------------------------
+# WordPress general
+#---------------------------
+# Ignore the wp-content/index.php
+/index.php
+
+#---------------------------
+# Exclude WordPress core
+#---------------------------
+#   
+/wordpress/*
+/wordpress/wp-includes/
+/wordpress/wp-admin/
+!/wordpress/wp-content
+/wordpress/wp-content/*
+
+#---------------------------
+# WordPress themes
+#---------------------------
+# Ignore all themes
+!/wordpress/wp-content/themes
+/wordpress/wp-content/themes/*
+# DO NOT ignore this theme!
+# !/wordpress/wp-content/themes/twentyseventeen
+
+#---------------------------
+# WordPress plugins
+#---------------------------
+# Ignore all plugins
+!/wordpress/wp-content/plugins
+/wordpress/wp-content/plugins/*
+# DO NOT ignore this plugin!
+!/wordpress/wp-content/plugins/hello.php
+
+#---------------------------
+# WP MU plugins: these are
+# managed by the platform.
+#---------------------------
+!/wordpress/wp-content/mu-plugins
+/wordpress/wp-content/mu-plugins/*
+
+#---------------------------
+# WP uploads directory
+#---------------------------
+!/wordpress/wp-content/uploads
+/wordpress/wp-content/uploads/*
+
+#---------------------------
+# WP upgrade files
+#---------------------------
+/wordpress/wp-content/upgrade/
+
+#---------------------------
+# Composer
+#---------------------------
+/vendor
+composer.lock
+auth.json
+.env
+.env.*
+!.env.example
+
+#---------------------------
+# Logs
+#---------------------------
+npm-debug.log
+*.log
+
+#---------------------------
+# Other files & folders
+#---------------------------
+
+# PHPStorm idea
+/.idea
+/.vscode
+
+# Git
+.gitkeep
+.htaccess
+.gitignore
+
+# Database
+.DS_Store
+Thumbs.db
+
+# PHPStorm/VScode
+/.idea
+/.vscode
+
+#---------------------------
+# Json
+#---------------------------
+/node_modules

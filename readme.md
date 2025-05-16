@@ -49,3 +49,23 @@ volumes:
   wp_data:
 
 ```
+
+## Folder structure when we run Composer.
+```bash
+project-folder/
+├─ vendor/
+├─ wordpress/
+│  ├─ wp-admin/
+│  ├─ wp-content/
+│  │  ├─ plugins/
+│  │  ├─ themes/
+│  │  ├─ uploads/
+│  ├─ wp-includes/
+│  ├─ // ... other WP files
+├─ index.php
+├─ wp-config.php
+├─ .env
+├─ .gitignore
+├─ composer.json
+├─ composer.lock
+```

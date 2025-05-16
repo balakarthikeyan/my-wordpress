@@ -13,12 +13,12 @@ services:
     ports:
       - "8083:80"
     volumes:
-      ["./wp_data:/var/www/html"]
+      ["./wordpress:/var/www/html"]
     networks:
       mysql-phpmyadmin: {}
 
 volumes:
-  wp_data:
+  wordpress:
 
 networks:
   mysql-phpmyadmin:
